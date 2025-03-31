@@ -1,0 +1,7 @@
+{
+  "name": "njam-green",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/main"></ion-back-button>
+    </ion-buttons>
+    <ion-title>HISTORIAL</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="historial-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>TIPO DE MATERIAL</th>
+          <th>TIPO</th>
+          <th>FECHA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of historial">
+          <td>{{ item.id }}</td>
+          <td>{{ item.material }}</td>
+          <td [class.organico]="item.tipo === 'OR'" [class.inorganico]="item.tipo === 'IN'">
+            {{ item.tipo }}
+          </td>
+          <td>{{ item.fecha }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</ion-content>
