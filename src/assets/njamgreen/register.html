@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro - NJAM Green</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Menú separado -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="dashboard.php">Panel</a></li>
+      <li><a href="acerca.html">Acerca de</a></li>
+      <li><a href="logout.php">Salir</a></li>
+    </ul>
+  </nav>
+  <main class="intro fade-in">
+    <h2>📝 Registro de Usuario</h2>
+    <form action="register.php" method="POST" class="modal-contenido" autocomplete="on">
+      <input type="text" name="nombre" placeholder="Tu nombre" required autocomplete="name">
+      <input type="email" name="correo" placeholder="Tu correo" required autocomplete="email">
+      <input type="password" name="password" placeholder="Contraseña" required autocomplete="new-password">
+      <button type="submit" class="boton">Registrar</button>
+    </form>
+  </main>
+</body>
+</html>

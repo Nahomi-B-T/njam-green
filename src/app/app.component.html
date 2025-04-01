@@ -1,0 +1,47 @@
+<ion-menu contentId="main-content" side="start">
+  <ion-content class="menu-content">
+
+    <!-- Logo -->
+    <div class="menu-logo-box">
+      <img src="assets/img/logo.png" alt="Logo NJAM Green" class="menu-logo" />
+    </div>
+
+    <!-- Usuario -->
+    <div class="menu-user">
+      <span>Usuario:</span><br />
+      <b>{{ nombreUsuario }}</b>
+    </div>
+
+    <!-- Opciones del menú -->
+    <ion-list class="menu-list">
+      <ion-item routerLink="/control-manual">
+        <ion-icon name="hardware-chip-outline" slot="start"></ion-icon>
+        Control Manual
+      </ion-item>
+
+      <ion-item routerLink="/historial">
+        <ion-icon name="newspaper-outline" slot="start"></ion-icon>
+        Historial
+      </ion-item>
+
+      <ion-item href="assets/img/ManualDeUsuario.pdf">
+        <ion-icon name="book-outline" slot="start"></ion-icon>
+        Manual de Usuario
+      </ion-item>
+
+      <ion-item href="assets/njamgreen/index.html">
+        <ion-icon name="globe-outline" slot="start"></ion-icon>
+        Nuestra Página Web
+      </ion-item>
+
+      <!-- Cerrar sesión -->
+      <ion-item (click)="cerrarSesion()">
+        <ion-icon name="log-out-outline" slot="start"></ion-icon>
+        Cerrar Sesión
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main-content"></ion-router-outlet>

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar class="custom-header">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/main" icon="arrow-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Control Manual
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding control-manual-content">
+  <div class="container">
+    <ion-card class="compuerta-card">
+      <ion-card-header>
+        <ion-card-title>⚙️ Control de Compuerta</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button class="boton" (click)="abrirCompuerta('manual')">
+          <ion-icon name="lock-open-outline" slot="start"></ion-icon>
+          Abrir Compuerta
+        </ion-button>
+        
+        <ion-button class="boton warning" (click)="iniciarCalibracion('general')">
+          <ion-icon name="construct-outline" slot="start"></ion-icon>
+          Iniciar Calibración
+        </ion-button>
+        
+        <ion-button class="boton warning" (click)="clasificarDesecho('reciclable')">
+          <ion-icon name="funnel-outline" slot="start"></ion-icon>
+          Clasificar
+        </ion-button>
+        
+        <ion-button class="boton secondary" (click)="cerrarCompuerta('manual')">
+          <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+          Cerrar Compuerta
+        </ion-button>
+        
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

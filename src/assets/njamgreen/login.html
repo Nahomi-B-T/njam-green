@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar Sesión - NJAM Green</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <!-- Menú separado -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="dashboard.php">Panel</a></li>
+      <li><a href="acerca.html">Acerca de</a></li>
+      <li><a href="logout.php">Salir</a></li>
+    </ul>
+  </nav>
+
+  <main class="intro fade-in">
+    <h2>🔐 Iniciar Sesión</h2>
+    <form action="login.php" method="POST" class="modal-contenido">
+      <input type="email" name="correo" placeholder="Tu correo" required>
+      <input type="password" name="password" placeholder="Contraseña" required>
+      <div class="g-recaptcha" data-sitekey="6LezHwIrAAAAAOv2UmumcV3fxtydWia3Km3b_xID"></div>
+      <button type="submit" class="boton">Entrar</button>
+    </form>
+    <p style="text-align:center; margin-top:15px;">¿No tienes cuenta? <a href="register.html">Regístrate aquí</a></p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/main"></ion-back-button>
+    </ion-buttons>
+    <ion-title>HISTORIAL</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="historial-container" *ngIf="historial.length > 0; else noHayDatos">
+    <table class="tabla-historial">
+      <thead>
+        <tr>
+          <th>Peso</th>
+          <th>Tipo de basura</th>
+          <th>Fecha y Hora</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of historial">
+          <td>{{ item.peso }}</td>
+          <td>{{ item.tipo_de_basura }}</td>
+          <td>{{ item.fecha | date:'short' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <ng-template #noHayDatos>
+    <div class="no-historial">
+      <ion-icon name="sad-outline" size="large"></ion-icon>
+      <p>No se ha registrado ningún residuo aún.</p>
+    </div>
+  </ng-template>
+</ion-content>

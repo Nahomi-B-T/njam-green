@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NJAM Green - Eco 4 You</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="icon" href="logo.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header bonito con marca -->
+  <header class="header-top">
+    <h1 class="brand">NJAM GREEN</h1>
+    <p class="tagline">eco 4 You</p>
+  </header>
+
+  <!-- Menú separado -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="register.html">Crear cuenta</a></li>
+      <li><a href="dashboard.php">Panel</a></li>
+      <li><a href="acerca.html">Acerca de</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main>
+    <section class="intro fade-in">
+      <h2>🌿 ¿Quiénes somos?</h2>
+      <p>NJAM Green automatiza la clasificación de residuos, combinando IA, sensores y amor por el planeta.</p>
+    </section>
+
+    <section class="info fade-in">
+      <div class="info-box">
+        <h3>🚀 Misión</h3>
+        <p>Crear soluciones tecnológicas que faciliten el reciclaje desde su origen.</p>
+      </div>
+      <div class="info-box">
+        <h3>🌎 Visión</h3>
+        <p>Convertirnos en pioneros del reciclaje inteligente en entornos urbanos.</p>
+      </div>
+      <div class="info-box">
+        <h3>📈 Alcance</h3>
+        <p>Diseño de un sistema que funcione en escuelas, oficinas y hogares.</p>
+      </div>
+    </section>
+
+    <section class="descarga fade-in">
+      <h2>♻ Hagamos el cambio</h2>
+      <p>El primer paso es comenzar desde casa.</p>
+      <a href="#" class="boton">📱 Descargar App</a>
+    </section>
+  </main>
+
+  <footer id="modalContacto" class="modal-footer">
+    <h2>📫 Contáctanos</h2>
+    <p>¿Tienes dudas, sugerencias o quieres colaborar?</p>
+    <form action="sendmail.php" method="POST" class="modal-contenido">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="correo" placeholder="Tu correo" required>
+      <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+      <button type="submit" class="boton">Enviar</button>
+    </form>
+  </footer>
+
+  <!-- Botpress -->
+  <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2025/03/27/03/20250327031932-T98OKX7G.js"></script>
+
+</body>
+</html>
